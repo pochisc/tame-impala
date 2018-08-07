@@ -95,6 +95,13 @@ header > nav > ul > li > ul {
     color: white;
 }
 
+h2 {
+    font-size: 70pt;
+    font-family: Roboto;
+    color: #149BF9;
+    letter-spacing: 4pt;
+    text-shadow:3px 4px 4px #000000;
+}
 
 
 
