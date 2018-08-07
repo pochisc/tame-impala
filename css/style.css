@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+*{
+    margin: 0;
+    padding: 0;    
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.logo {
+    margin: auto;
+    margin-left: 80px;
+}
+header {
+    width: 100%;    
+    height: 50px;
+    background: black;
+    display: flex;
+}
+.logo p a img {    
+    width: 100px;
+    float: left;    
+}
+nav{
+    float: right;
+}
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+/* ------------------------------------------------------------------------------------- */
+            /* MENU DESPLEGABLE */
+/* ESTILOS GENERALES */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav li {
+    line-height: 50px;
+    position: relative;
+    
+}
+header nav li ul {
+    position: absolute;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: 0 30px;
+    transition: .5s;
+}
+header nav a:hover {
+    background: rgba(0,0,0,.5)
+}
+header nav li ul {
+    display: none;
+}
+header nav li:hover ul {
+    display: block;
+}
+/* --------------------------------------- */
+/* PRIMER NIVEL */
+header nav ul {
+    background: #333;
+    display: table;
+    width: 100%
+}
+header > nav > ul > li{
+    float: left;
+}
+
+/* --------------------------------------- */
+/* SEGUNDO NIVEL */
+header nav li li {
+    background: #222;
+    font-size: 10px;
+}
+header > nav > ul > li > ul {
+    top: 100%;
+}
+/* ------------------------------------------------------------------------------------- */
+/* PORTADA */
+#portada {
+    position: relative;
+}
+#portada img {
+    width: 100%;
+    height: 100%;
+}
+#portada .portada {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
