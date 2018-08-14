@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    box-sizing: border-box;    
 }
 body{
     font-family: 'Work Sans', sans-serif;
@@ -9,6 +11,7 @@ body{
 .logo {
     margin: auto;
     margin-left: 80px;
+    
 }
 header {
     width: 100%;    
@@ -25,7 +28,7 @@ nav{
 }
 section{
     width: 100%;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 /* ------------------------------------------------------------------------------------- */
             /* MENU DESPLEGABLE */
@@ -82,6 +85,8 @@ header > nav > ul > li > ul {
 /* PORTADA */
 #portada {
     position: relative;
+    
+
 }
 #portada img {
     width: 100%;
@@ -95,13 +100,64 @@ header > nav > ul > li > ul {
     color: white;
 }
 
-h2 {
+.portada {
     font-size: 70pt;
     font-family: Roboto;
     color: #149BF9;
     letter-spacing: 4pt;
     text-shadow:3px 4px 4px #000000;
+    
+}
+/* --------------------------------------------------------------------------------------------- */
+/* HISTORIA */
+.historia {
+    height: 400px;
+    display: flex;
+    background: #393E46;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* DISCOGRAFIA */
+.discografia {
+    background-image: url(https://www.filepicker.io/api/file/wr7fJsSIQRW7Pc66jtla/convert?cache=true&crop=0%2C0%2C4000%2C2000);
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.discos {
+    width: 20%;
+	position: relative;
+    overflow: hidden;
+      
 }
 
+.portada_album {
+    transition: all 0.5s;
+    opacity: 1;
+    width: 90%;
+}
+.discos_texto{
+    position: absolute;
+	bottom: 25px;
+	padding-right: 14px;
+	font-size: 9pt;
+	transform: translateY(140%);
+	transition: all 0.5s ease-out;
+}
+.discos:hover .discos_texto {
+	transform: translateY(0%);
+}
 
+.discos:hover .portada_album {
+	transform: scale(1.10);
+	opacity: 0.3;
+}
 
